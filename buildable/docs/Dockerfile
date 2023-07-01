@@ -2,7 +2,7 @@
 
 FROM ghcr.io/wombatcyberlabs/lab-vuepress-base:main as builder
 
-COPY docs /app/src/lab
+COPY lab /app/src/lab
 
 RUN npm run build
 
