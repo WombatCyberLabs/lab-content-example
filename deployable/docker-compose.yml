@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  docs:
+    image: ghcr.io/wombatcyberlabs/lab-content-example-docs:main
+    restart: always
+    hostname: docs
+    ports:
+      - "80:80"
+  mortalwombat:
+    image: ghcr.io/wombatcyberlabs/lab-content-example-mortalwombat:main
+    restart: always
+    hostname: mortalwombat
+    ports:
+      - "8083:8000"
