@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Get Buildables
         id: get-buildables
-        run: echo "::set-output name=matrix::$(ls buildable | jq -R -s -c 'split(\"\n\")[:-1]')"
+        run: echo "::set-output name=matrix::$(ls buildable | jq -R -s -c 'split("\n")[:-1]')"
     outputs:
       matrix: ${{ steps.get-buildables.outputs.matrix}}
   build:
