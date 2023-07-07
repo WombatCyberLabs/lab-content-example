@@ -1,0 +1,21 @@
+{
+    "timeout": 4000,
+    "services":[
+        {
+            "name":"Lab Docs",
+            "hostname":"10.13.37.10",
+            "http": true,
+            "testPath":"/",
+            "ports":[]
+        },
+        {
+            "name":"Mortal Wombat",
+            "hostname":"10.13.37.12",
+            "ports":[
+                {
+                    "port": 8000
+                }
+            ]
+        }
+    ]
+}
