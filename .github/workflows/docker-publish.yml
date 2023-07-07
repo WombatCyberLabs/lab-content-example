@@ -90,6 +90,7 @@ jobs:
         uses: docker/setup-buildx-action@79abd3f86f79a9d68a23c75a09a9a85889262adf
       
       - name: Start services
+        working-directory: ./deployable
         run: |
           docker compose up -d
 
