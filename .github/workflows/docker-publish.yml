@@ -100,4 +100,4 @@ jobs:
           sleep 15
       - name: Check service statuses
         run: |
-          test $(curl http://localhost:8080/testResults?update=true | jq 'map(select(.success != true)) | length == 0') == "true"
+          ./service_test.sh
